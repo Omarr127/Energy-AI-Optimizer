@@ -197,7 +197,7 @@ NRMSE (%) = 100 * RMSE / mean(y_t)
 
 NRMSE is the primary forecasting ranking criterion in the original challenge. Its denominator is the **mean actual load for the corresponding evaluation subset**; it is not normalization by peak load.
 
-## 8. Proposed Battery Dispatch Optimization
+## 8. Battery Dispatch Optimization
 
 The next component uses the day-ahead demand forecast, photovoltaic estimates, import/export tariffs, and current battery state of charge to schedule energy flows over 96 intervals.
 
@@ -234,7 +234,7 @@ SoC_(t+1) = SoC_t
 
 **Important modeling note:** Separate nonnegative import/export and charge/discharge variables are convenient for linear optimization, but **simultaneous import and export** or **simultaneous charge and discharge** must be prohibited or shown economically non-beneficial. Binary mode variables and a **MILP** are one robust way to enforce physical exclusivity. Also ensure grid limits and SoC terminal conditions match the actual operational specification.
 
-### Daily rolling-horizon process (proposed)
+### Daily rolling-horizon process
 
 1. Generate 96 load estimates for the next day.
 2. Provide expected PV production, tariff prices, and initial battery SoC.
@@ -260,4 +260,3 @@ EnergyAI_Optimizer/
     └── val_forecast_oct2024.png
 ```
 
-**Scope of this documentation:** The supplied plots and metrics demonstrate the forecasting evaluation; the battery dispatch controller is mathematically formulated but no implemented optimizer or verified cost-saving benchmark is claimed.

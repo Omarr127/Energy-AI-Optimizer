@@ -3,7 +3,7 @@
 ### Day-ahead residential load forecasting & battery dispatch optimization
 
 **Applied Machine Learning · Energy Systems · Time-Series Forecasting · Optimization**  
-Developed for the **2026 Energy AI Hackathon (Solship)** · **Zewail City of Science and Technology**
+Developed for **Solship company, an Italy-based startup specializing in AI-driven energy optimization** ·
 
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white) ![LightGBM](https://img.shields.io/badge/LightGBM-Gradient%20Boosting-2A8B57) ![XGBoost](https://img.shields.io/badge/XGBoost-Compared-EC6B23) ![Status](https://img.shields.io/badge/Forecasting-Evaluated-brightgreen) ![Optimizer](https://img.shields.io/badge/Battery%20Optimizer-Formulated-orange)
 
